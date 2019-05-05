@@ -1,0 +1,87 @@
+
+
+<!--<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">-->
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center"
+    android:gravity="">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/shape_white"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:text="Success"
+                android:textColor="@color/mytext"
+                android:textSize="30sp"
+
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:text="Congratulations you have successfully signed up for the site"
+                android:textAlignment="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColor="@color/mytext"
+                android:textSize="14sp"
+
+                />
+
+            <Button
+                android:id="@+id/poop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_gr"
+                android:padding="4dp"
+                android:text="OK"
+                android:textColor="@color/md_white_1000"
+                android:textSize="16dp"
+                 />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/check"
+            android:layout_gravity="center_horizontal"/>
+
+
+</RelativeLayout>
+

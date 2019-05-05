@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anshul.p1.Cart">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        android:id="@+id/appBarLayout">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_cart"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_margin="0dp"
+            android:background="@android:color/white"
+            android:padding="0dp"
+            android:textAlignment="textEnd"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:titleTextColor="@android:color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/md_white_1000"
+                android:background="@android:color/transparent"
+                android:id="@+id/tv_toolbar"
+                android:text="CART"
+                android:textSize="@dimen/materialize_typography_title"
+                android:layout_marginRight="30dp"/>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/b3_cart"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/t4_cart"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/md_grey_500" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape1"
+        android:text="Place Order"
+        android:textColor="@color/md_white_1000"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/b3_cart"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        />
+
+
+</android.widget.RelativeLayout>

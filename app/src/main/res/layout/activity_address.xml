@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anshul.p1.Address">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_address"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_margin="0dp"
+            android:background="@android:color/white"
+            android:padding="0dp"
+            android:textAlignment="textEnd"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:titleTextColor="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="ADDRESS"
+                android:textAlignment="center"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/materialize_typography_title"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/map"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/mywhite"
+                    android:gravity="center"
+                    android:text="Dilivery Address"
+                    android:textColor="@color/md_black_1000"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_text"
+                    android:gravity="center"
+                    android:hint="Street"
+                    android:textColorHint="@color/md_grey_500"
+                    android:layout_margin="10dp"
+                    android:id="@+id/e6"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_text"
+                    android:gravity="center"
+                    android:hint="City"
+                    android:id="@+id/e7"
+                    android:textColorHint="@color/md_grey_500"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_text"
+                    android:gravity="center"
+                    android:hint="State"
+                    android:id="@+id/e8"
+                    android:textColorHint="@color/md_grey_500"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_text"
+                    android:gravity="center"
+                    android:hint="Pin Code"
+                    android:id="@+id/e9"
+                    android:inputType="number"
+                    android:textColorHint="@color/md_grey_500"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape1"
+                    android:text="Payment Details"
+                    android:textColor="@color/md_white_1000"
+                    android:layout_margin="10dp"
+                    android:id="@+id/b1_address"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.widget.RelativeLayout>
+

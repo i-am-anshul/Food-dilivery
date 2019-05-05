@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">p1</string>
+    <string name="back">&#xf060;</string>
+    <string name="abc">hello</string>
+    <string name="android">food</string>
+    <string name="forget">
+
+
+    <![CDATA[<b>Forgot Password?</b> Click Here
+
+    ]]>
+
+    </string>
+    <string name="hint_user"><font size="10">Username should be of min 6 char</font></string>
+    <string name="hint_email"><font size="10">Email Address Incorrect</font></string>
+    <string name="hint_pass1"><font size="10">Password should be atleast 6 char long</font></string>
+    <string name="hint_pass2"><font size="10">Password does not match</font></string>
+    <string name="title_activity_menu">menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search">search</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="drawer_open">Hello World from section: %1$d</string>
+    <string name="drawer_close">Hello World from section: %1$d</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

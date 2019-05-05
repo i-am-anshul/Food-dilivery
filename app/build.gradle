@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.anshul.p1"
+        minSdkVersion 22
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:27.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    compile 'com.google.android.gms:play-services-maps:11.8.0'
+    compile 'com.google.maps.android:android-maps-utils:0.5+'
+    annotationProcessor 'com.github.bumptech.glide:glide:4.5.0'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+
+    //networking
+    compile 'com.amitshekhar.android:android-networking:1.0.1'
+    compile 'com.amitshekhar.android:jackson-android-networking:1.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.facebook.stetho:stetho:1.3.1'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.3.1'
+
+    //for badge
+    implementation 'com.mikepenz:actionitembadge:3.3.2@aar'
+    implementation 'com.mikepenz:iconics-core:{latestVersion}@aar'
+
+    implementation("com.mikepenz:materialdrawer:6.0.2@aar") {
+        transitive = true
+    }
+    implementation 'com.android.support:support-v4:27.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile 'com.google.android:flexbox:0.3.2'
+//    compile ("com.github.bumptech.glide:recyclerview-integration:4.5.0") {
+//        // Excludes the support library because it's already included by Glide.
+//        transitive = false
+//    }
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    testCompile 'junit:junit:4.12'
+}
